@@ -1,0 +1,29 @@
+server:
+  port: 8084
+  servlet:
+    context-path:
+
+spring:
+  application:
+    name: eureka-client4
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka
+    fetchRegistry: true
+    registerWithEureka: true
+    instance:
+      preferIpAddress: true
+
+zuul:
+  routes:
+    eureka-client1: /client1/**
+    eureka-client2: /client2/**
+    eureka-client3: /client3/**
+
+#    установка заголовка авторизации
+  sensitiveHeaders: Cookie, Set-Cookie
+
+# ribbon:
+#   ReadTimeout: 60000

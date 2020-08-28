@@ -17,16 +17,21 @@ public class GreetingController implements GreetingControllerI1 {
         return appName;
     }
 
+    @GetMapping("/abc")
+    public void abc() {    }
+
     @GetMapping("/name")
     public String greeting(@RequestParam(name = "name", required = false) String s) {
         return String.format("Hello from '%s'!", s);
     }
 
     @Override
+    @GetMapping("/greeting")
     public String greeting() {
         return "greeting";
     }
 
+    @Override
     @GetMapping("/param/{id}")
     public String parametrized(@PathVariable(value = "id") String id) {
         return "echo: " + id;
