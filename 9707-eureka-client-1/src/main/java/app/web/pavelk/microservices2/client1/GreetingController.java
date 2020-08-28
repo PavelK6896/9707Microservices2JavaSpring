@@ -37,4 +37,12 @@ public class GreetingController implements GreetingControllerI1 {
         return "echo: " + id;
     }
 
+    @Value("${userValue:0}")
+    private String userValue;
+
+    @GetMapping("/config1")
+    public String config1() {
+
+        return userValue;
+    }
 }

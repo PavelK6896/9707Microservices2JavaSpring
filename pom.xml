@@ -9,11 +9,14 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>9707-eureka-server-1</module>
+        <module>9707-eureka-server-0</module>
         <module>9707-eureka-client-1</module>
-        <module>9708-eureka-feign-client-1</module>
-        <module>9708-eureka-hystrix-client-1</module>
-        <module>9708-eureka-zuul-client-1</module>
+        <module>9708-eureka-feign-client-2</module>
+        <module>9708-eureka-hystrix-client-3</module>
+        <module>9708-eureka-zuul-client-4</module>
+        <module>9708-eureka-config-server-6</module>
+        <module>9708-eureka-auth-server-7</module>
+        <module>9708-admin-client-5</module>
     </modules>
 
 

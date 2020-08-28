@@ -1,0 +1,26 @@
+server:
+  port: 8087
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/microservices2
+    username: postgres
+    password: 0
+
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+
+
+# eureka.client.registerWithEureka=false
+# eureka.client.fetchRegistry=false
+
+# spring.cloud.config.uri=http://localhost:8081
+
+# spring.cloud.config.username=root
+# spring.cloud.config.password=s3cr3t
+# spring.cloud.config.name=conf
+# spring.cloud.config.uri=http://localhost:8081
