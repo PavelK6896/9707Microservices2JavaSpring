@@ -17,6 +17,9 @@
         <module>9708-eureka-config-server-6</module>
         <module>9708-eureka-auth-server-7</module>
         <module>9708-admin-client-5</module>
+        <module>9709-eureka-secured-client-8</module>
+        <module>9709-common-dto-1</module>
+        <module>9709-eureka-statistic-service-9</module>
     </modules>
 
 
