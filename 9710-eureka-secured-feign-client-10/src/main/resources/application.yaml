@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: eureka-client10
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8080/eureka}
+    instance:
+      preferIpAddress: true
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8087/auth/user
+    client:
+      client-id: flametoken
+      client-secret: 1
+

@@ -14,6 +14,6 @@ public class StatisticController {
 
     @GetMapping("/simple")
     public CloudPacket simpleTest() {
-        return new CloudPacket(1000L, "TopSecret Simple Packet");
+        return new CloudPacket(1000L, "simple TopSecret Simple Packet");
     }
 }

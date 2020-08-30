@@ -24,6 +24,7 @@ zuul:
     eureka-client7: /client7/**
     eureka-client8: /client8/**
     eureka-client9: /client9/**
+    eureka-client10: /client10/**
 
 #    установка заголовка авторизации
   sensitiveHeaders: Cookie, Set-Cookie
