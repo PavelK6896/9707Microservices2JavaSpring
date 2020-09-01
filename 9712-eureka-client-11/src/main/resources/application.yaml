@@ -1,0 +1,51 @@
+server:
+  port: 8091
+  servlet:
+    context-path:
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka
+    fetchRegistry: true
+
+spring:
+  application:
+    name: eureka-client11
+
+  data:
+    rest:
+      basePath: /api
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:mydatabase;MODE=PostgreSQL
+    username: sa
+    password:
+
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        temp:
+          use_jdbc_metadata_defaults: false
+
+
+  thymeleaf:
+    encoding: UTF-8
+    prefix: file:src/main/resources/templates/
+    cache: false
+  resources:
+    static-locations: file:src/main/resources/static/
+
+  jackson:
+    serialization:
+      indent_output: true
+
+
+management:
+  endpoint:
+    health:
+      show-details: always

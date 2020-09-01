@@ -1,0 +1,33 @@
+server:
+  port: 8092
+  servlet:
+    context-path:
+
+spring:
+  application:
+    name: eureka-client12
+
+  thymeleaf:
+    encoding: UTF-8
+    prefix: file:9712-eureka-client-12/src/main/resources/templates/
+
+    cache: false
+  resources:
+    static-locations: file:9712-eureka-client-12/src/main/resources/static/
+
+  jackson:
+    serialization:
+      indent_output: true
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka
+    fetchRegistry: true
+
+
+management:
+  endpoint:
+    health:
+      show-details: always
