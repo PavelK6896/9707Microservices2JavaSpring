@@ -1,6 +1,6 @@
 package app.web.pavelk.microservices2.common2;
 
-public interface ProductI1 {
+public interface ProductI1 { // можно сделать абстрактным класом с полями
     String getTitle();
 
     String getDescription();

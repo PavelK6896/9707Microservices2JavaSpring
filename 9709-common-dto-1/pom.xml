@@ -9,16 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <version>1.0-SNAPSHOT</version>
-
-<!--    <properties>-->
-<!--        <java.version>11</java.version>-->
-<!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
-<!--        <maven.compiler.source>11</maven.compiler.source>-->
-<!--        <maven.compiler.target>11</maven.compiler.target>-->
-<!--    </properties>-->
-
     <artifactId>9709-common-dto-1</artifactId>
     <groupId>app.web.pavelk.microservices2.common1</groupId>
+
+    <!--    <properties>-->
+    <!--        <java.version>11</java.version>-->
+    <!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+    <!--        <maven.compiler.source>11</maven.compiler.source>-->
+    <!--        <maven.compiler.target>11</maven.compiler.target>-->
+    <!--    </properties>-->
 
 
 

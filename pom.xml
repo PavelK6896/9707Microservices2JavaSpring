@@ -24,6 +24,7 @@
         <module>9712-eureka-client-11</module>
         <module>9712-eureka-client-12</module>
         <module>9712-common-product-dto-2</module>
+        <module>9714-eureka-feign-client-13</module>
     </modules>
 
 

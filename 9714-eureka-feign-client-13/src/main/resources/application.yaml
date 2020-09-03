@@ -1,0 +1,34 @@
+server:
+  port: 8093
+  servlet:
+    context-path:
+
+spring:
+  application:
+    name: eureka-client13
+
+  thymeleaf:
+    encoding: UTF-8
+    prefix: file:9714-eureka-feign-client-13/src/main/resources/templates/
+
+
+    cache: false
+  resources:
+    static-locations: file:9714-eureka-feign-client-13/src/main/resources/static/
+
+  jackson:
+    serialization:
+      indent_output: true
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka
+    fetchRegistry: true
+
+
+management:
+  endpoint:
+    health:
+      show-details: always
